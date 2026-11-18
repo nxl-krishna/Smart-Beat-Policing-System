@@ -1,5 +1,5 @@
-import { useCallback,useState } from "react";
-import { Button, TextField } from "@mui/material";
+import { useCallback, useState } from "react";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import styles from "./AddProfileWeb.module.css";
 
@@ -26,13 +26,13 @@ const AddProfileWeb = () => {
     navigate("/emercheckweb");
   }, [navigate]);
 
-  const onRectangleButton1Click = useCallback(() => {
-    navigate("/SubmittedWeb");
-  }, [navigate]);
+  // const onRectangleButton1Click = useCallback(() => {
+  //   navigate("/SubmittedWeb");
+  // }, [navigate]);
 
-  const onADDTextClick = useCallback(() => {
-    navigate("/SubmittedWeb");
-  }, [navigate]);
+  // const onADDTextClick = useCallback(() => {
+  //   navigate("/SubmittedWeb");
+  // }, [navigate]);
 //   const [userRegistration,setUserRegistration]= useState({
 //     name:"",
 //     idnumber:"",
@@ -90,7 +90,7 @@ const AddProfileWeb = () => {
         .then((res) => res.json())
         .then((data) => {
           console.log(data, "userRegister");
-          if (data.status == "ok") {
+          if (data.status === "ok") {
             alert("Registration Successful");
           } else {
             alert("Profile Added");

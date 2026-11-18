@@ -12,7 +12,7 @@ import AddProfileWeb from "./pages/AddProfileWeb";
 import TracknowWeb from "./pages/TracknowWeb";
 import TracknowWebMap from "./pages/TracknowWebMap";
 import SubmittedWeb from "./pages/SubmittedWeb";
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
 import MapBox from "./pages/MapBox";
 import { useEffect } from "react";
 
@@ -36,6 +36,8 @@ function App() {
       case "/":
         title = "";
         metaDescription = "";
+        break;
+      default:
         break;
     }
 

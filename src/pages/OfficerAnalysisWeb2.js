@@ -1,11 +1,10 @@
-import { useCallback,useEffect,useState } from "react";
+import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import analysisData from "./Analysis_Data.json";
 import {useTable} from "react-table";
 import * as React from "react";
 import styles from "./OfficerAnalysisWeb2.module.css";
 import "./Table.css";
-import { LineChart, Line} from 'recharts';
 import {
   PieChart,
   Pie,

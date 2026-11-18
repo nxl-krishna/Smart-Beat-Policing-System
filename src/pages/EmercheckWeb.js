@@ -1,12 +1,11 @@
 import { useCallback } from "react";
-import { Button, TextField } from "@mui/material";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import styles from "./EmercheckWeb.module.css";
 import React, { useEffect, useState } from "react";
-import { Map, GeolocateControl, Marker,Popup } from "react-map-gl";
+import { Map, GeolocateControl, Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import axios from "axios";
-import {IoLocationSharp} from "react-icons/fa";
 const EmercheckWeb = () => {
   const navigate = useNavigate();
 
@@ -30,16 +29,16 @@ const EmercheckWeb = () => {
     navigate("/AddProfileWeb");
   }, [navigate]);
 
-  const onEmergencyAlertButtonClick = useCallback(() => {
-    navigate("/AddProfileWeb");
-  }, [navigate]);
+  // const onEmergencyAlertButtonClick = useCallback(() => {
+  //   navigate("/AddProfileWeb");
+  // }, [navigate]);
   const [lat, setLat] = useState(23.022168903229044);
   const [lng, setLng] = useState(72.54626279296826);
   const [arbitary, setArbitary] = useState({ longitude: 0, latitude: 0 });
   const [coordinates, setCoordinates] = useState([]);
   const [toRender, setToRender] = useState(false);
   const [emerPoints, setEmerPoints] = useState([]);
-  const [popupVisible,setpopupVisible] = useState(false)
+  const [, setpopupVisible] = useState(false);
   useEffect(() => {
     // navigator.geolocation.getCurrentPosition(function (position) {
     //   setLat(position.coords.latitude);

@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
-import { gapi } from "gapi-script";
-import "./Login.css"
+import React, { useState } from "react";
+// import { gapi } from "gapi-script";
+import "./Login.css";
 
 const Login= () => {
   const [email, setEmail] = useState("");
@@ -12,15 +12,15 @@ const Login= () => {
         setTimeout(() => showPopup("hide"), 3000)
     }
 
-    const onSuccess = e => {
-        alert("User signed in")
-        console.log(e)
-    }
+    // const onSuccess = e => {
+    //     alert("User signed in")
+    //     console.log(e)
+    // }
 
-    const onFailure = e => {
-        alert("User sign in Failed")
-        console.log(e)
-    }
+    // const onFailure = e => {
+    //     alert("User sign in Failed")
+    //     console.log(e)
+    // }
     function handleSubmit(e) {
       e.preventDefault();
   
@@ -41,7 +41,7 @@ const Login= () => {
         .then((res) => res.json())
         .then((data) => {
           console.log(data, "userRegister");
-          if (data.status == "ok") {
+          if (data.status === "ok") {
             alert("login successful");
             window.localStorage.setItem("token", data.data);
             window.localStorage.setItem("loggedIn", true);

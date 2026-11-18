@@ -26,9 +26,9 @@ const OfficerAnalysisWeb = () => {
     navigate("/AddProfileWeb");
   }, [navigate]);
 
-  const onGroupButtonClick = useCallback(() => {
-    navigate("/OfficerAnalysisWeb2");
-  }, [navigate]);
+  // const onGroupButtonClick = useCallback(() => {
+  //   navigate("/OfficerAnalysisWeb2");
+  // }, [navigate]);
   const [name, setFname] = useState("");
   const [id, setID] = useState("");
   
@@ -49,20 +49,20 @@ const OfficerAnalysisWeb = () => {
         .then((res) => res.json())
         .then((data) => {
           console.log(data, "userRegister");
-          if (data.status == "ok") {
+          if (data.status === "ok") {
             alert("Successful");
           } else {
             alert("User Found");
           }
         });
       };
-      function SubmitButton(){
-        if (name && id){
-          return <button type="button">Get Analysis</button>
-        } else {
-          return <button type="button" disabled>Get Analysis</button>
-        };
-      };
+      // function SubmitButton(){
+      //   if (name && id){
+      //     return <button type="button">Get Analysis</button>
+      //   } else {
+      //     return <button type="button" disabled>Get Analysis</button>
+      //   };
+      // };
   return (
     <div className={styles.officerAnalysisWebDiv}>
       <div className={styles.rectangleDiv} />

@@ -1,5 +1,5 @@
 import { useCallback,useState,useEffect } from "react";
-import { Button, TextField } from "@mui/material";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import styles from "./TracknowWeb.module.css";
 
@@ -30,15 +30,14 @@ const TracknowWeb = () => {
     navigate("/AddProfileWeb");
   }, [navigate]);
 
-  const onGroupButtonClick = useCallback(() => {
-    navigate("/tracknowweb1");
-  }, [navigate]);
+  // const onGroupButtonClick = useCallback(() => {
+  //   navigate("/tracknowweb1");
+  // }, [navigate]);
 
 
-  const [lat, setLat] = useState(23.022168903229044);
-  const [lng, setLng] = useState(72.54626279296826);
-  const [coordinates, setCoordinates] = useState([]);
-  const [toRender, setToRender] = useState(false);
+  const [lat] = useState(23.022168903229044);
+  const [lng] = useState(72.54626279296826);
+  const [, setToRender] = useState(false);
   const [location,setLocation] = useState({
     longitude:0,
     latitude:0
@@ -70,6 +69,7 @@ useEffect(() => {
     setCheckPoints(data.data)
   }
   fetchRoute()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 },[]) 
 
 
