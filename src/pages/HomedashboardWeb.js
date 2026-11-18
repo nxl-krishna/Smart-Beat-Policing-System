@@ -135,7 +135,7 @@ const HomedashboardWeb = () => {
         src="../icons8profile32-1@2x.png"
       />
       <img className={styles.groupIcon1} alt="" src="../group1.svg" />
-      <div className={styles.welcomeGarvDiv}>Welcome Garv,</div>
+      <div className={styles.welcomeGarvDiv}>Welcome Krishna,</div>
       <div className={styles.ourMissionIsToAchieveAnE}>
         Our mission is to achieve an environment of professionalism for the
         police force. It will push the police personnel to be accountable which

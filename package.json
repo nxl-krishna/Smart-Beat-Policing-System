@@ -1,6 +1,7 @@
 {
-  "name": "test-website",
+  "name": "krishna-aankh",
   "version": "0.1.0",
+  "author": "Krishna",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",

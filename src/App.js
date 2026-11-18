@@ -34,10 +34,48 @@ function App() {
     //TODO: Update meta titles and descriptions below
     switch (pathname) {
       case "/":
-        title = "";
-        metaDescription = "";
+        title = "Krishna | Aankh - Smart Beat Policing System";
+        metaDescription = "Aankh Smart E-Beat Management System by Krishna";
+        break;
+      case "/HomedashboardWeb":
+        title = "Krishna - Dashboard | Aankh";
+        metaDescription = "Aankh Home Dashboard by Krishna";
+        break;
+      case "/OfficerAnalysisWeb":
+        title = "Krishna - Officer Analysis | Aankh";
+        metaDescription = "Aankh Officer Analysis by Krishna";
+        break;
+      case "/OfficerAnalysisWeb2":
+        title = "Krishna - Performance Analysis | Aankh";
+        metaDescription = "Aankh Performance and Analytics by Krishna";
+        break;
+      case "/EmercheckWeb":
+        title = "Krishna - Emergency Checkpoints | Aankh";
+        metaDescription = "Aankh Emergency Checkpoints by Krishna";
+        break;
+      case "/AddProfileWeb":
+        title = "Krishna - Add Profile | Aankh";
+        metaDescription = "Aankh Add Officer Profile by Krishna";
+        break;
+      case "/TracknowWeb":
+        title = "Krishna - Track Now | Aankh";
+        metaDescription = "Aankh Real-time Officer Tracking by Krishna";
+        break;
+      case "/TracknowWebMap":
+        title = "Krishna - Tracking Map | Aankh";
+        metaDescription = "Aankh Tracking Map by Krishna";
+        break;
+      case "/SubmittedWeb":
+        title = "Krishna - Profile Submitted | Aankh";
+        metaDescription = "Aankh Profile Submission by Krishna";
+        break;
+      case "/MapBox":
+        title = "Krishna - MapBox | Aankh";
+        metaDescription = "Aankh MapBox View by Krishna";
         break;
       default:
+        title = "Krishna | Aankh - Smart Beat Policing System";
+        metaDescription = "Aankh Smart E-Beat Management System by Krishna";
         break;
     }
 
