@@ -1,4 +1,4 @@
-# Website For AANKH-An E-Beat Management System(A Project Under Azadi Ka Amrit Mahotsav Hackathon 2022-2023)
+# AANKH-An E-Beat Management System
 <br>
 The project aims at creating an efficient, ML-enabled beat/e-beat
 system for the Gujarat police which can be further expanded as a
